@@ -8,7 +8,7 @@ load_dotenv()
 
 TOKEN = os.getenv('TOKEN')
 
-TEACHER_ID = 783080948
+TEACHER_ID = 5419247338
 
 # logs papkasini avtomatik yaratish
 if not os.path.exists('logs'):
