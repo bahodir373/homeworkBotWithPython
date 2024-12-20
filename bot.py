@@ -27,7 +27,7 @@ async def start(update: Update, context):
         await update.message.reply_text(f"Assalomu alaykum, {user_name} ustoz! Xush kelibsiz.")
     else:
         await update.message.reply_text(
-            f"Salom, {user_name}! Bu bot orqali o'qituvchingizga vazifalar va fayllar yuborishingiz mumkin. Vazifangiz yoki faylingizni yuboring."
+            f"Salom, {user_name}!👋\n\nBu bot orqali ustozga uyga vazifalaringizni yuborishingiz mumkin."
         )
 
 
