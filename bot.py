@@ -3,7 +3,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters
 import logging
 
-TEACHER_ID = 5419247338
+TEACHER_ID = 783080948
 TOKEN = ''
 
 # logs papkasini avtomatik yaratish
