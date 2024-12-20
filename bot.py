@@ -4,7 +4,6 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, fil
 import logging
 
 TEACHER_ID = 783080948
-TOKEN = ''
 
 # logs papkasini avtomatik yaratish
 if not os.path.exists('logs'):
