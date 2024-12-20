@@ -1,10 +1,13 @@
 import os
+from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters
 import logging
 
+load_dotenv()
+
 TEACHER_ID = 783080948
-TOKEN = '7874985110:AAG5OckprK9P2sz9QgIhP9fQ-cIDXDXtUkM'
+TOKEN = os.getenv('TOKEN')
 
 if not os.path.exists('logs'):
     os.makedirs('logs')
@@ -74,6 +77,10 @@ async def task_handler(update: Update, context):
 
 
 if __name__ == '__main__':
+    if not TOKEN:
+        logger.error("TOKEN o'rnatilmagan. Iltimos, .env faylini tekshiring.")
+        exit(1)
+
     application = ApplicationBuilder().token(TOKEN).build()
 
     application.add_handler(CommandHandler("start", start))
